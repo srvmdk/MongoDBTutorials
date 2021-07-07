@@ -22,7 +22,7 @@
 
 1. ### Lookup aggregation
 
-**_Query to provide all the friends along with their address_**
+**_Query to provide all the friends along with their address_**\
 ref: [friends.json](/json/friends.json), [friends_address.json](/json/friends_address.json)
 
 ```js
@@ -160,7 +160,7 @@ _Output:_
 
 2. ### Match aggregation
 
-**_Query to provide all the records for females_**
+**_Query to provide all the records for females_**\
 ref: [persons.json](/json/persons.json)
 
 ```js
@@ -233,7 +233,7 @@ _Sample output:_
 
 3. ### Group aggregation
 
-**_Write a query to provide state-wise female count in descending order_**
+**_Write a query to provide state-wise female count in descending order_**\
 ref: [persons.json](/json/persons.json)
 
 ```js
@@ -275,8 +275,8 @@ _Sample output:_
 
 #### Scenario - 1
 
-**_Write a query to project only fullname (new field), gender & email address_**
-_fullname will contain a concatinated version of title (uppercase), first(capitalize first letter), last_
+**_Write a query to project only fullname (new field), gender & email address_**\
+_fullname will contain a concatinated version of title (uppercase), first(capitalize first letter), last_\
 ref: [persons.json](/json/persons.json)
 
 ```js
@@ -327,9 +327,9 @@ _Sample output:_
 
 #### Scenario - 2
 
-**_Write a query to project first name, age, dob, location \(only coordinate)_**
-_location will include a new field "type: 'Point'" and coordinates should have valid format of longitude & latitude_
-_age and birth date \(dob.date in valid date format) to be flattened_
+**_Write a query to project first name, age, dob, location \(only coordinate)_**\
+_location will include a new field "type: 'Point'" and coordinates should have valid format of longitude & latitude_\
+_age and birth date \(dob.date in valid date format) to be flattened_\
 ref: [persons.json](/json/persons.json)
 
 ```js
@@ -429,7 +429,7 @@ _Sample output:_
 
 #### Scenario - 3
 
-**_Write a query to find number of persons born in each year_**
+**_Write a query to find number of persons born in each year_**\
 ref: [persons.json](/json/persons.json)
 
 ```js
@@ -467,7 +467,7 @@ _Sample output:_
 
 5. ### Unwind aggregation
 
-**_Write a query to find hobbies based on age groups_**
+**_Write a query to find hobbies based on age groups_**\
 ref: [friends.json](/json/friends.json)
 
 ```js
@@ -534,7 +534,7 @@ _Output:_
 
 6. ### Projection with arrays - slice operator
 
-**_Write a query to get first element of examScores array_**
+**_Write a query to get first element of examScores array_**\
 ref: [persons.json](/json/friends.json)
 
 ```js
@@ -557,7 +557,7 @@ _Output:_
 { "examScore" : [ { "difficulty" : 3, "score" : 75.1 } ] }
 ```
 
-**_Write a query to get to get last 2 elements of examScores array_**
+**_Write a query to get to get last 2 elements of examScores array_**\
 ref: [persons.json](/json/friends.json)
 
 ```js
@@ -574,7 +574,7 @@ _Output:_
 { "examScore" : [ { "difficulty" : 8, "score" : 44.2 }, { "difficulty" : 6, "score" : 61.5 } ] }
 ```
 
-**_Write a query to get to get 2nd element of examScores array_**
+**_Write a query to get to get 2nd element of examScores array_**\
 ref: [persons.json](/json/friends.json)
 
 ```js
@@ -604,7 +604,7 @@ _Output:_
 
 7. ### Projection with arrays - size operator
 
-**_Write a query to get the number of exams taken by each friend_**
+**_Write a query to get the number of exams taken by each friend_**\
 ref: [persons.json](/json/friends.json)
 
 ```js
@@ -627,7 +627,7 @@ _Output:_
 
 8. ### Projection with arrays - filter operator
 
-**_Write a query to get the examScores greater than 60_**
+**_Write a query to get the examScores greater than 60_**\
 ref: [persons.json](/json/friends.json)
 
 ```js
@@ -671,7 +671,7 @@ _Output:_
 
 9. ### Projection with arrays - using multiple operators
 
-**_Write a query to get the maximum examScore for each friend_**
+**_Write a query to get the maximum examScore for each friend_**\
 ref: [persons.json](/json/friends.json)
 
 ```js
@@ -717,7 +717,7 @@ _Output:_
 
 10. ### Bucket aggregation
 
-**_Write a query to get persons based on age category boundaries - 18, 30, 50, 60, 80_**
+**_Write a query to get persons based on age category boundaries - 18, 30, 50, 60, 80_**\
 ref: [persons.json](/json/persons.json)
 
 ```js
@@ -782,7 +782,7 @@ _Sample output:_
 
 #### Scenario - 1
 
-**_Write a query to get top 10 oldest persons in terms of dob_**
+**_Write a query to get top 10 oldest persons in terms of dob_**\
 ref: [persons.json](/json/persons.json)
 
 ```js
@@ -799,8 +799,8 @@ db.persons.aggregate([
 ]);
 ```
 
-_Note:_
-_$limit_ : limits the number of output records
+_Note:_\
+_$limit_ : limits the number of output records\
 
 _Output:_
 
@@ -819,7 +819,7 @@ _Output:_
 
 #### Scenario - 2
 
-**_Write a query to get next 5 persons next to top 10 oldest persons in terms of dob_**
+**_Write a query to get next 5 persons next to top 10 oldest persons in terms of dob_**\
 ref: [persons.json](/json/persons.json)
 
 ```js
@@ -837,8 +837,8 @@ db.persons.aggregate([
 ]);
 ```
 
-_Note:_
-_$skip_ : skips the number of records
+_Note:_\
+_$skip_ : skips the number of records\
 
 _Output:_
 
