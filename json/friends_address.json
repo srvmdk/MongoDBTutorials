@@ -1,0 +1,34 @@
+[
+  {
+    "_id": {
+      "$oid": "60aa850e452e992ccc87e359"
+    },
+    "address": {
+      "street": "3287 high street",
+      "city": "carlow",
+      "state": "wexford",
+      "postcode": 47671
+    }
+  },
+  {
+    "_id": {
+      "$oid": "60aa850e452e992ccc87e35a"
+    },
+    "address": {
+      "street": "4962 36th ave",
+      "city": "jasper",
+      "state": "northwest territories",
+      "postcode": "U0A 4J6"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "60aa850e452e992ccc87e35b"
+    },    "address": {
+      "street": "2575 abanoz sk",
+      "city": "elazığ",
+      "state": "kırşehir",
+      "postcode": 48715
+    }
+  }
+]
