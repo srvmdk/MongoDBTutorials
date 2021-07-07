@@ -800,7 +800,7 @@ db.persons.aggregate([
 ```
 
 _Note:_\
-_$limit_ : limits the number of output records\
+_$limit_ : limits the number of output records
 
 _Output:_
 
@@ -838,7 +838,7 @@ db.persons.aggregate([
 ```
 
 _Note:_\
-_$skip_ : skips the number of records\
+_$skip_ : skips the number of records
 
 _Output:_
 
