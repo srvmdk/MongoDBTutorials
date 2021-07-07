@@ -227,6 +227,8 @@ _Sample output:_
 // ... many more
 ```
 
+**[👆 Top](#table-contents)**
+
 ---
 
 3. ### Group aggregation
